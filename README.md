@@ -216,7 +216,7 @@ MyLazarusProjects/
 ### **Основные контакты / Primary Contacts:**
 - **GitHub**: [LehichR](https://github.com/LehichR)
 - **Email**: redkinalex325@gmail.com
-- **Telegram**: @Lehich_R
+- **Telegram**: @Lehich_r
 
 ### **Для сотрудничества / For Collaboration:**
 1. **Предложения работы** — Junior Delphi Developer позиции
