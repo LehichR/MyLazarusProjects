@@ -1,0 +1,119 @@
+object Form1: TForm1
+  Left = 301
+  Height = 439
+  Top = 215
+  Width = 398
+  Caption = 'Form1'
+  ClientHeight = 439
+  ClientWidth = 398
+  DesignTimePPI = 120
+  LCLVersion = '4.2.0.0'
+  object Button1: TButton
+    Left = 8
+    Height = 232
+    Top = 192
+    Width = 384
+    Caption = 'Посчитать!'
+    TabOrder = 0
+    OnClick = ButtonClick
+  end
+  object Label1: TLabel
+    Left = 24
+    Height = 20
+    Top = 72
+    Width = 78
+    Caption = 'Рассчитать:'
+  end
+  object Label2: TLabel
+    Left = 112
+    Height = 20
+    Top = 72
+    Width = 25
+    Caption = 'z = '
+  end
+  object Edit1: TEdit
+    Left = 334
+    Height = 28
+    Top = 72
+    Width = 58
+    TabOrder = 1
+    Text = '2'
+  end
+  object Label3: TLabel
+    Left = 272
+    Height = 20
+    Top = 72
+    Width = 48
+    Caption = 'при x='
+  end
+  object Label4: TLabel
+    Left = 152
+    Height = 20
+    Top = 48
+    Width = 108
+    Caption = '__________________'
+  end
+  object Label5: TLabel
+    Left = 200
+    Height = 20
+    Top = 40
+    Width = 19
+    Caption = 'x   '
+  end
+  object Label6: TLabel
+    Left = 160
+    Height = 20
+    Top = 72
+    Width = 18
+    Caption = '1+'
+  end
+  object Label7: TLabel
+    Left = 184
+    Height = 20
+    Top = 64
+    Width = 72
+    Caption = '____________'
+  end
+  object Label8: TLabel
+    Left = 204
+    Height = 20
+    Top = 64
+    Width = 27
+    Caption = 'x**2'
+  end
+  object Label9: TLabel
+    Left = 184
+    Height = 20
+    Top = 88
+    Width = 18
+    Caption = '1+'
+  end
+  object Label10: TLabel
+    Left = 204
+    Height = 20
+    Top = 80
+    Width = 54
+    Caption = '_________'
+  end
+  object Label11: TLabel
+    Left = 216
+    Height = 20
+    Top = 80
+    Width = 35
+    Caption = '3x**2'
+  end
+  object Label12: TLabel
+    Left = 216
+    Height = 20
+    Top = 96
+    Width = 25
+    Caption = '1+x'
+  end
+  object Label13: TLabel
+    Left = 259
+    Height = 20
+    Top = 72
+    Width = 27
+    Caption = ',      '
+  end
+end

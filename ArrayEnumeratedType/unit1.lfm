@@ -1,0 +1,198 @@
+object Form1: TForm1
+  Left = 276
+  Height = 463
+  Top = 156
+  Width = 405
+  Caption = 'Работа с массивами'
+  ClientHeight = 463
+  ClientWidth = 405
+  DesignTimePPI = 120
+  LCLVersion = '4.2.0.0'
+  object Label1: TLabel
+    Left = 24
+    Height = 17
+    Top = 8
+    Width = 347
+    Caption = 'Переменной ESTTEZKY присвоить значение true, если '
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 17
+    Top = 24
+    Width = 357
+    Caption = 'в массиве NIN2 есть одинаковые имена, и значение false'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 17
+    Top = 40
+    Width = 124
+    Caption = 'в противном случае'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 8
+    Height = 20
+    Top = 59
+    Width = 390
+    Caption = '-----------------------------------------------------------------'
+  end
+  object Label5: TLabel
+    Left = 24
+    Height = 30
+    Top = 80
+    Width = 346
+    Caption = 'name1'#13#10' (IVANOV, PETROV, KOBBOV, JAKOVLEV, CHERNOV, HITROV)'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsItalic]
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 24
+    Height = 30
+    Top = 112
+    Width = 261
+    Caption = 'name2'#13#10' (VASILY, URIY, IGOR, MIHAIL, OLEG, VICTOR)'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsItalic]
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 8
+    Height = 20
+    Top = 136
+    Width = 390
+    Caption = '-----------------------------------------------------------------'
+  end
+  object ButtonRandom: TButton
+    Left = 200
+    Height = 72
+    Top = 160
+    Width = 190
+    Caption = 'Перемешать массив'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -18
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    OnClick = ButtonRandomClick
+  end
+  object ListBox2: TListBox
+    Left = 8
+    Height = 136
+    Top = 320
+    Width = 189
+    ItemHeight = 0
+    TabOrder = 1
+  end
+  object ButtonClearRes: TButton
+    Left = 200
+    Height = 64
+    Top = 392
+    Width = 190
+    Caption = 'Очистить результат'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+    OnClick = ButtonClearResClick
+  end
+  object Label8: TLabel
+    Left = 0
+    Height = 20
+    Top = 288
+    Width = 390
+    Caption = '-----------------------------------------------------------------'
+  end
+  object ButtonCheck: TButton
+    Left = 200
+    Height = 72
+    Top = 320
+    Width = 190
+    Caption = 'Проверить совпадение'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+    OnClick = ButtonCheckClick
+  end
+  object Label14: TLabel
+    Left = 16
+    Height = 20
+    Top = 304
+    Width = 49
+    Caption = 'Вывод'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object ListBox1: TListBox
+    Left = 8
+    Height = 136
+    Top = 160
+    Width = 189
+    ItemHeight = 0
+    TabOrder = 4
+  end
+  object Label15: TLabel
+    Left = 16
+    Height = 20
+    Top = 144
+    Width = 54
+    Caption = 'Массив'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object ButtonClearM: TButton
+    Left = 200
+    Height = 64
+    Top = 232
+    Width = 190
+    Caption = 'Очистить результат'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 5
+    OnClick = ButtonClearMClick
+  end
+end

@@ -1,0 +1,201 @@
+object Form1: TForm1
+  Left = 49
+  Height = 492
+  Top = 149
+  Width = 691
+  Caption = 'Lab9'
+  ClientHeight = 492
+  ClientWidth = 691
+  DesignTimePPI = 120
+  LCLVersion = '4.2.0.0'
+  object StringGridEnter1: TStringGrid
+    Left = 8
+    Height = 152
+    Top = 88
+    Width = 322
+    ColCount = 4
+    FixedCols = 0
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+    RowCount = 4
+    TabOrder = 0
+    OnKeyPress = StringGridEnter1KeyPress
+  end
+  object Label1: TLabel
+    Left = 6
+    Height = 40
+    Top = 0
+    Width = 685
+    Caption = 'Даны две целые матрицы произвольного порядка. Вывести ту из них, в которой большее кол-во '#13#10'                                            строк, состоящих из отрицательных элементов.'
+  end
+  object Label2: TLabel
+    Left = 0
+    Height = 20
+    Top = 40
+    Width = 696
+    Caption = '____________________________________________________________________________________________________________________'
+  end
+  object StringGridEnter2: TStringGrid
+    Left = 360
+    Height = 152
+    Top = 88
+    Width = 322
+    ColCount = 4
+    FixedCols = 0
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+    RowCount = 4
+    TabOrder = 1
+    OnKeyPress = StringGridEnter1KeyPress
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 25
+    Top = 64
+    Width = 115
+    Caption = 'Ввод матриц'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -18
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object EditSize: TEdit
+    Left = 40
+    Height = 33
+    Top = 264
+    Width = 256
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -18
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsItalic]
+    ParentFont = False
+    TabOrder = 2
+    Text = '4'
+    OnKeyPress = EditSizeKeyPress
+  end
+  object ButtonMin: TButton
+    Left = 8
+    Height = 33
+    Top = 264
+    Width = 30
+    Caption = '-'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -20
+    Font.Name = 'Segoe UI Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+    OnClick = ButtonMinClick
+  end
+  object ButtonAdd: TButton
+    Left = 300
+    Height = 33
+    Top = 264
+    Width = 30
+    Caption = '+'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -20
+    Font.Name = 'Segoe UI Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 4
+    OnClick = ButtonAddClick
+  end
+  object Label4: TLabel
+    Left = 16
+    Height = 25
+    Top = 240
+    Width = 217
+    Caption = 'Установить размерность'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -18
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object ButtonCheck: TButton
+    Left = 360
+    Height = 76
+    Top = 336
+    Width = 322
+    Caption = 'Проверить'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -18
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 5
+    OnClick = ButtonCheckClick
+  end
+  object Label5: TLabel
+    Left = 0
+    Height = 20
+    Top = 304
+    Width = 696
+    Caption = '--------------------------------------------------------------------------------------------------------------------'
+  end
+  object StringGridRes: TStringGrid
+    Left = 8
+    Height = 152
+    Top = 336
+    Width = 322
+    ColCount = 4
+    FixedCols = 0
+    FixedRows = 0
+    RowCount = 4
+    TabOrder = 6
+    OnKeyPress = StringGridEnter1KeyPress
+  end
+  object ButtonClean: TButton
+    Left = 360
+    Height = 76
+    Top = 412
+    Width = 322
+    Caption = 'Очистить сетки'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -18
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 7
+    OnClick = ButtonCleanClick
+  end
+  object Label6: TLabel
+    Left = 16
+    Height = 25
+    Top = 312
+    Width = 84
+    Caption = 'Результат'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -18
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object ButtonRandom: TButton
+    Left = 360
+    Height = 60
+    Top = 248
+    Width = 322
+    Caption = 'Заполнить матрицы'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -18
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 8
+    OnClick = ButtonRandomClick
+  end
+end

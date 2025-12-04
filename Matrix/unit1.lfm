@@ -1,0 +1,188 @@
+object Form1: TForm1
+  Left = 257
+  Height = 501
+  Top = 159
+  Width = 631
+  Caption = 'Lab8'
+  ClientHeight = 501
+  ClientWidth = 631
+  DesignTimePPI = 120
+  LCLVersion = '4.2.0.0'
+  object Label1: TLabel
+    Left = 168
+    Height = 30
+    Top = 0
+    Width = 326
+    Caption = 'Дана действительная квадратная матрица a[i,j] (i,j = 1,…,n). '#13#10'      Получить квадратную матрицу  c[i,j] (i,j = 1,…,n) '
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 0
+    Height = 20
+    Top = 24
+    Width = 630
+    Caption = '_________________________________________________________________________________________________________'
+  end
+  object StringGridEnter: TStringGrid
+    Left = 16
+    Height = 184
+    Top = 72
+    Width = 338
+    ColCount = 7
+    FixedCols = 0
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+    RowCount = 7
+    TabOrder = 0
+    OnKeyPress = StringGridEnterKeyPress
+  end
+  object Label3: TLabel
+    Left = 32
+    Height = 20
+    Top = 48
+    Width = 138
+    Caption = 'Заполните матрицу'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 1
+    Height = 20
+    Top = 256
+    Width = 630
+    Caption = '_________________________________________________________________________________________________________'
+  end
+  object StringGridRes: TStringGrid
+    Left = 16
+    Height = 184
+    Top = 296
+    Width = 338
+    ColCount = 7
+    FixedCols = 0
+    FixedRows = 0
+    RowCount = 7
+    TabOrder = 1
+  end
+  object Label5: TLabel
+    Left = 32
+    Height = 20
+    Top = 272
+    Width = 151
+    Caption = 'Полученная матрица'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object EditSize: TEdit
+    Left = 400
+    Height = 28
+    Top = 88
+    Width = 176
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+    TabOrder = 2
+    Text = '6'
+    OnKeyPress = EditSizeKeyPress
+  end
+  object ButtonMin: TButton
+    Left = 368
+    Height = 28
+    Top = 88
+    Width = 30
+    Caption = '-'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -18
+    Font.Name = 'Segoe UI Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+    OnClick = ButtonMinClick
+  end
+  object ButtonAdd: TButton
+    Left = 576
+    Height = 28
+    Top = 88
+    Width = 30
+    Caption = '+'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -18
+    Font.Name = 'Segoe UI Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 4
+    OnClick = ButtonAddClick
+  end
+  object Label6: TLabel
+    Left = 400
+    Height = 20
+    Top = 64
+    Width = 173
+    Caption = 'Установите размерность'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object ButtonGo: TButton
+    Left = 368
+    Height = 120
+    Top = 136
+    Width = 240
+    Caption = 'Построить матрицу С'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 5
+    OnClick = ButtonGoClick
+  end
+  object Label7: TLabel
+    Left = 368
+    Height = 20
+    Top = 112
+    Width = 240
+    Caption = '----------------------------------------'
+  end
+  object ButtonClear: TButton
+    Left = 366
+    Height = 120
+    Top = 360
+    Width = 240
+    Caption = 'Очистить поля'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -17
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 6
+    OnClick = ButtonClearClick
+  end
+end
